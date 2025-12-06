@@ -34,6 +34,10 @@ app.add_middleware(
 from modules.deep_research.routes import router as research_router
 app.include_router(research_router, prefix="/api/research", tags=["深度研究"])
 
+# 新增: 法律检索 (基于向量数据库)
+from modules.legal_research.routes import router as legal_research_router
+app.include_router(legal_research_router, prefix="/api/legal-research", tags=["法律检索-向量"])
+
 # 成员B: 法律咨询
 from modules.legal_consultation.routes import router as consultation_router
 app.include_router(consultation_router, prefix="/api/consultation", tags=["法律咨询"])

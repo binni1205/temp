@@ -1,0 +1,2 @@
+# Legal Summary Module Dependencies
+# Add your dependencies here
